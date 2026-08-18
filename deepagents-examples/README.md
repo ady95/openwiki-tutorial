@@ -16,18 +16,29 @@ Python 3.11 이상이 필요합니다 (deepagents 요구사항).
 
 ```bash
 python -m venv .venv
-.venv/Scripts/activate      # Windows (macOS/Linux: source .venv/bin/activate)
+
+# 가상환경 활성화 (셸에 맞게 택일)
+#  - Windows PowerShell : .\.venv\Scripts\Activate.ps1
+#  - Windows cmd        : .venv\Scripts\activate.bat
+#  - macOS / Linux      : source .venv/bin/activate
+
 pip install -r requirements.txt
 ```
 
 모델 설정 (자기 프로바이더에 맞게 환경변수로):
 
-```bash
-# OpenAI를 그대로 쓰는 경우
-export OPENAI_API_KEY=sk-...
+```powershell
+# Windows PowerShell
+$env:OPENAI_API_KEY = "sk-..."
+# OpenAI 호환 게이트웨이·로컬 모델을 쓰는 경우 추가:
+$env:OPENAI_BASE_URL = "https://your-gateway.example.com/v1"
+$env:BOOK_MODEL_ID = "your-model-id"
+```
 
-# OpenAI 호환 게이트웨이·로컬 모델을 쓰는 경우
-export OPENAI_API_KEY=your-key
+```bash
+# macOS / Linux
+export OPENAI_API_KEY=sk-...
+# OpenAI 호환 게이트웨이·로컬 모델을 쓰는 경우 추가:
 export OPENAI_BASE_URL=https://your-gateway.example.com/v1
 export BOOK_MODEL_ID=your-model-id
 ```
