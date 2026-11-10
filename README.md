@@ -2,7 +2,15 @@
 
 위키독스 책 「OpenWiki & OKF 따라하기」의 공개 예제코드 저장소입니다.
 
-- 책: [https://wikidocs.net/book/20996](https://wikidocs.net/book/20996)
+## 책 소개
+
+<img src="images/cover.png" alt="OpenWiki & OKF 따라하기 책표지" width="300">
+
+**책 구매**
+
+- [YES24](https://www.yes24.com/product/goods/195242820)
+- [교보문고](https://ebook-product.kyobobook.co.kr/dig/epd/ebook/E000013443927)
+- [위키독스](https://wikidocs.net/book/20996)
 
 ## 구성
 
